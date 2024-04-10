@@ -1,0 +1,14 @@
+input = "civic"
+n = len(input)
+revlist = []
+
+for i in range(n - 1, -1, -1):
+    revlist.append(input[i])
+
+rev = "".join(revlist)
+
+print(input + " is: ", end="")
+if input == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
