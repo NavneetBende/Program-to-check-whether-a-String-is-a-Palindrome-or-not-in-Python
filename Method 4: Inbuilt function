@@ -1,0 +1,7 @@
+# main function
+string = "civic"
+
+reverse = ''.join(reversed(string))
+
+print(string + " is: ", end="")
+print("Palindrome") if string == reverse else print("Not Palindrome")
