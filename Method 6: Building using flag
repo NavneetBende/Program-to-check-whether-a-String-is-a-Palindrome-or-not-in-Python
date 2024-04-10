@@ -1,0 +1,15 @@
+input = "civic"
+
+j = -1
+flag = 0
+for char in input:
+    # char starts from index 0
+    # string[j] forces to read from end
+    # bcz negative index are read from end
+    if char != input[j]:
+        flag = 1
+        break
+    j = j - 1
+
+print(input + " is : ", end="")
+print("Not Palindrome") if flag else print("Palindrome")
