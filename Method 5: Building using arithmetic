@@ -1,0 +1,11 @@
+input = "civic"
+# this will automatically generate reverse
+rev = ""
+for ch in input:
+    rev = ch + rev
+
+print(input + " is : ", end="")
+print("Palindrome") if input == rev else print("Not Palindrome")
+
+print("string: " + input)
+print("rev: " + rev)
